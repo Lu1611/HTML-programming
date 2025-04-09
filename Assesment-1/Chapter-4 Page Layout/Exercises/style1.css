@@ -1,0 +1,102 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+  }
+  
+  h1, h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Header */
+  header {
+    background-color: #17072b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1em;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  /* Main layout */
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+    gap: 2em;
+  }
+  
+  .welcome {
+    flex: 2;
+  }
+  
+  .welcome h2 {
+    text-decoration: underline;
+  }
+  
+  .welcome img {
+    width: 100%;
+    margin-top: 1em;
+  }
+  
+  .line-up {
+    flex: 1;
+    background-color: #172d67;
+    color: #ffffff;
+    padding: 1em;
+  }
+  
+  .line-up h2 {
+    text-decoration: underline;
+  }
+  
+  .line-up ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .line-up li {
+    margin: 0.5em 0;
+  }
+  
+  .line-up-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+  
+  .line-up-images img {
+    width: 48%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #8c15e9;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    color: #ffffff;
+    font-size: 0.9em;
+  }
+  

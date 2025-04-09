@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Petrol Calculator</title>
+  <link rel="stylesheet" href="stylingsheet.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Petrol Calculator</h1>
+
+    <label>Cost per liter (AED):</label>
+    <input id="cost" type="number" value="1.72">
+
+    <label>Liters purchased:</label>
+    <input id="liters" type="number" value="0">
+
+    <button onclick="calculateTotal()">Calculate</button>
+
+    <p id="total">Total Cost: AED 0.00</p>
+  </div>
+
+  <script>
+    function calculateTotal() {
+      // Get the input values
+      var cost = document.getElementById("cost").value;
+      var liters = document.getElementById("liters").value;
+
+      // Multiply to get the total
+      var total = cost * liters;
+
+      // Show the total in the paragraph
+      document.getElementById("total").innerText = "Total Cost: AED" + total.toFixed(2);
+    }
+  </script>
+
+</body>
+</html>
+
